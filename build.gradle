@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+def jdaVersion = '3.7.1_404'
+def jSoupVersion = '1.11.3'
+group 'com.rlmerlin'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    //testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "net.dv8tion:JDA:$jdaVersion"
+    compile "org.jsoup:jsoup:$jSoupVersion"
+}
