@@ -19,3 +19,6 @@ dependencies {
     compile "net.dv8tion:JDA:$jdaVersion"
     compile "org.jsoup:jsoup:$jSoupVersion"
 }
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
