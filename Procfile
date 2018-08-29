@@ -1,1 +1,1 @@
-worker: java -jar target/out/artifacts/trener_bot_main_jar/trener-bot_main.jar
+worker: java -jar target/trener-bot_main.jar
